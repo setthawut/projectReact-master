@@ -84,7 +84,7 @@ const MainLayout = () => {
       permission: ["user", "superAdmin", "manage"],
     },
     {
-      name: "Test-Map",
+      name: "Map",
       icon: <CreditCardOutlined />,
       key: "8",
       to: "/testmap",

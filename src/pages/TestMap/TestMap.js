@@ -192,7 +192,7 @@ class TestMap extends React.Component {
             onDragEnd={this.onMarkDragEnd}
           >
             <InfoWindow>
-              <div>TCAT-LOGISTIC</div>
+              <div>LOGISTIC</div>
             </InfoWindow>
           </Marker>
           <DirectionsRenderer
