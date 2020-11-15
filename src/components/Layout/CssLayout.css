@@ -1,0 +1,26 @@
+.logo {
+  position: relative !important;
+  /* padding: 0 24px !important; */
+  padding:  0 14px !important;
+   margin:  16px !important;
+   height: 36px !important;
+  overflow: hidden !important;
+  background: #001529 !important;
+  color: #fff !important;
+  cursor: pointer !important;
+  transition: all 0.3s !important;
+  font-weight: 600 !important;
+  /* font-size: 22px !important; */
+}
+
+
+.title-lgt {
+  display: inline-block;
+  margin: 0 0 0 12px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  vertical-align: middle;
+  animation: fade-in;
+  animation-duration: 0.3s;
+}
