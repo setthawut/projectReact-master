@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Form, Input, Button} from "antd";
+import { Form, Input, Button } from "antd";
 import { UserOutlined, LockOutlined } from "@ant-design/icons";
 import { notificationWithIcon } from "../../components/Notification";
 import Api from "../../services/httpClient";
@@ -17,7 +17,6 @@ const tailLayout = {
   },
 };
 const LoginForm = () => {
-
   let history = useHistory();
   const [load, setLoad] = useState(false);
 
@@ -27,12 +26,13 @@ const LoginForm = () => {
     // formData.append("password", data.password);
 
     setLoad(true);
-console.log(">>>",data)
+
     await Api.post(`api/v1/login`, data)
       .then(({ data }) => {
         if (data.status === "success") {
           setLoad(false);
           //แปลง object เป็น JSON
+          console.log(">>>>>>>>",data.result.access_token)
           let userProfile = JSON.stringify(data.result);
           localStorage.setItem("userProfile", userProfile);
           localStorage.setItem("userLogin", data.result.access_token);
