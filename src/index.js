@@ -20,6 +20,7 @@ import "./index.css";
 import "./app.less";
 
 function PrivateRoute({ children, ...rest }) {
+  console.log("PrivateRoute")
   return (
     <div>
       <Route
@@ -37,7 +38,9 @@ function PrivateRoute({ children, ...rest }) {
 }
 
 const App = () => (
+ 
   <div className="nav">
+    { console.log("App")}
     <Router history={history}>
       <Switch>
         <Route exact path="/login" component={Login} />

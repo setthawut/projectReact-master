@@ -32,7 +32,6 @@ const LoginForm = () => {
         if (data.status === "success") {
           setLoad(false);
           //แปลง object เป็น JSON
-          console.log(">>>>>>>>",data.result.access_token)
           let userProfile = JSON.stringify(data.result);
           localStorage.setItem("userProfile", userProfile);
           localStorage.setItem("userLogin", data.result.access_token);

@@ -35,7 +35,7 @@ export default class Login extends Component {
             </div>
 
             <div className="isoSignInForm">
-              <LoginForm onSubmit={this.onSubmit} />
+              <LoginForm  />
 
               <div className="isoCenterComponent isoHelperWrapper">
                 {"คุณต้องการสร้างบัญชี ? "}
