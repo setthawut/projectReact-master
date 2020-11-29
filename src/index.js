@@ -20,7 +20,7 @@ import "./index.css";
 import "./app.less";
 
 function PrivateRoute({ children, ...rest }) {
-  console.log("PrivateRoute")
+  console.log(">>>>>>",{...children})
   return (
     <div>
       <Route
